@@ -32,8 +32,11 @@ struct ContentView: View {
                 
                 Text("$1,000,000")
                     .font(.system(size: 30))
-                Text("Jackpot")
-                    .font(.system(size: 30))
+                HStack{
+                    Text("Jackpot")
+                        .font(.system(size: 30))
+                }
+                
                 
                 Spacer()
                 Rectangle()
@@ -64,6 +67,7 @@ struct ContentView: View {
                     }
                 }
                 .buttonStyle(.borderedProminent)
+                .tint(.orange)
                 .font(.system(size: 30))
             }
             .padding()
